@@ -12,3 +12,13 @@ Add the following code to product-template.liquid
    {% endif %}
 {% endfor %}
 ```
+
+<ins>TO CONTROL THE NUMBER OF COLUMNS USED IN DROPDOWN MENU FOR A SPECIFIC NAVLABEL</ins>
+
+Add the following code to product-template.liquid
+```
+/*================ Make Fishing menu multi-column (Jon) ================*/
+#SiteNavLabel-fishing { width: auto; }
+#SiteNavLabel-fishing  ul { column-count: 4; }
+#SiteNavLabel-fishing  ul li {-webkit-column-break-inside: avoid;page-break-inside: avoid;    break-inside: avoid; }
+```
