@@ -1,6 +1,7 @@
 # Shopify-Debut-theme-tweaks
 
 <ins>TO SHOW A DISCOUNT 'BANNER' ONLY ON SPECIFIC PRODUCT PAGES</ins>
+
 Add the following code to product-template.liquid
 ```
 {% for collection in product.collections %}
