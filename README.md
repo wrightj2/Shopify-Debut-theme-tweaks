@@ -34,3 +34,7 @@ Also add the following CSS to theme.scss.liquid
  font-size: small;
 }
 ```
+More here re Structured Data for Breadcrumbs
+
+https://www.shopify.co.uk/partners/blog/breadcrumb-navigation
+https://gist.github.com/mirceapiturca/9be3186b607922e0a1b9#file-shopify-breadcrumb-liquid-rich-snippets
