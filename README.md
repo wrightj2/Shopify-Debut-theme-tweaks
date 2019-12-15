@@ -29,7 +29,8 @@ Follow instructions here https://help.shopify.com/en/themes/customization/naviga
 Also add the following CSS to theme.scss.liquid
 ```
 .breadcrumb {
- padding-left: 75px;
+ padding-left: 92px;
  padding-top: 5px;
+ font-size: small;
 }
 ```
