@@ -26,7 +26,7 @@ Add the following code to product-template.liquid
 
 Follow instructions here https://help.shopify.com/en/themes/customization/navigation/add-breadcrumbs
 
-But slightly amend the code to correct positioning to align with page-width by using <div class="page-width">
+But slightly amend the code to correct positioning to align with page-width by using ```<div class="page-width">```
 
 ```
 {% unless template == 'index' or template == 'cart' or template == 'list-collections' %}
