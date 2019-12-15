@@ -23,6 +23,7 @@ Add the following code to product-template.liquid
 #SiteNavLabel-fishing  ul li {-webkit-column-break-inside: avoid;page-break-inside: avoid;    break-inside: avoid; }
 ```
 <ins>TO ADD BREADCRUMBS</ins>
+
 Follow instructions here https://help.shopify.com/en/themes/customization/navigation/add-breadcrumbs
 
 Also add the following CSS to theme.scss.liquid
