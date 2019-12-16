@@ -25,6 +25,7 @@ Add the following code to product-template.liquid
 <ins>TO ADD BREADCRUMBS</ins>
 
 Follow instructions here https://help.shopify.com/en/themes/customization/navigation/add-breadcrumbs
+Also worth looking at this https://www.shopify.co.uk/partners/blog/breadcrumb-navigation
 
 But slightly amend the code to correct positioning to align with page-width by using ```<div class="page-width">```
 
