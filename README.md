@@ -94,7 +94,8 @@ Also add the following CSS to theme.scss.liquid
   text-decoration: underline;
 }
 ```
-More here re Structured Data for Breadcrumbs
+More here re Structured Data/SEO for Breadcrumbs
 
 https://www.shopify.co.uk/partners/blog/breadcrumb-navigation
 https://gist.github.com/mirceapiturca/9be3186b607922e0a1b9#file-shopify-breadcrumb-liquid-rich-snippets
+https://www.rockpapercopy.com/breadcrumbs-seo/
