@@ -99,3 +99,7 @@ More here re Structured Data/SEO for Breadcrumbs
 https://www.shopify.co.uk/partners/blog/breadcrumb-navigation
 https://gist.github.com/mirceapiturca/9be3186b607922e0a1b9#file-shopify-breadcrumb-liquid-rich-snippets
 https://www.rockpapercopy.com/breadcrumbs-seo/
+
+<ins> HOW TO ADD TABS TO PRODUCT DESCRIPTIONS </INS>
+
+See this tutorial https://community.shopify.com/c/Shopify-Design/Adding-tabs-on-product-page-simple-entry/td-p/430363
