@@ -109,3 +109,9 @@ See this tutorial https://community.shopify.com/c/Shopify-Design/Adding-tabs-on-
 <small class="site-footer__copyright-content">&copy; {{ 'now' | date: "%Y" }}, {{ shop.name | link_to: '/' }} Ltd. Trading since 2003. VAT No. 808782009</small>
         <small class="site-footer__copyright-content site-footer__copyright-content--powered-by">{{ powered_by_link }}</small>
 ```
+
+<INS> REMOVE TAXES CALCULATED AT CHECKOUT FROM PRODUCT PAGE </INS>
+
+See this article https://community.shopify.com/c/Shopify-Design/Delete-Shipping-calculated-at-checkout/td-p/533355
+
+
