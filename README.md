@@ -100,6 +100,12 @@ https://www.shopify.co.uk/partners/blog/breadcrumb-navigation
 https://gist.github.com/mirceapiturca/9be3186b607922e0a1b9#file-shopify-breadcrumb-liquid-rich-snippets
 https://www.rockpapercopy.com/breadcrumbs-seo/
 
-<ins> HOW TO ADD TABS TO PRODUCT DESCRIPTIONS </INS>
+<INS> HOW TO ADD TABS TO PRODUCT DESCRIPTIONS </INS>
 
 See this tutorial https://community.shopify.com/c/Shopify-Design/Adding-tabs-on-product-page-simple-entry/td-p/430363
+
+<INS> REMOVE POWERED BY SHOPIFY & ADD CUSTOM TEXT </INS>
+```
+<small class="site-footer__copyright-content">&copy; {{ 'now' | date: "%Y" }}, {{ shop.name | link_to: '/' }} Ltd. Trading since 2003. VAT No. 808782009</small>
+        <small class="site-footer__copyright-content site-footer__copyright-content--powered-by">{{ powered_by_link }}</small>
+```
