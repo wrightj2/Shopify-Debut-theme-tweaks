@@ -114,4 +114,10 @@ See this tutorial https://community.shopify.com/c/Shopify-Design/Adding-tabs-on-
 
 See this article https://community.shopify.com/c/Shopify-Design/Delete-Shipping-calculated-at-checkout/td-p/533355
 
+<ins> SHOW DISCOUNT % </ins>
+
+See this article https://www.blackbeltcommerce.com/shopify-how-to-show-percentage-discount-saved/
+
+
+
 
