@@ -170,5 +170,35 @@ Amend code in product-price.liquid
   {% endif %}
   <!-- End code to add 'From' price' -->
 ```
+If you want to show From and To price i.e. lowest priced variant to highest priced variant, amend code to look like this:
+
+```
+<!-- Start code to add 'From' and 'To' price' -->
+ {% if product.price_max != product.price_min and template == 'collection' %}
+  <div class="price__regular">
+    <dt>
+      <span class="visually-hidden visually-hidden--inline">{{ 'products.product.regular_price' | t }}</span>
+    </dt>
+    <dd>
+      <span class="price-item price-item--regular" data-regular-price>
+      <!-- This is the amended line -->
+       From {{ product.price_min | money }} To {{ product.price_max | money }}
+      </span>
+    </dd>
+  </div>
+  {% else %}
+  <div class="price__regular">
+    <dt>
+      <span class="visually-hidden visually-hidden--inline">{{ 'products.product.regular_price' | t }}</span>
+    </dt>
+    <dd>
+      <span class="price-item price-item--regular" data-regular-price>
+       {{ money_price }}
+      </span>
+    </dd>
+  </div>
+  {% endif %}
+  <!-- End code to add 'From' and 'To' price' -->
+```
 
 ---
