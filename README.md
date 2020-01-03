@@ -12,7 +12,7 @@ Add the following code to product-template.liquid
    {% endif %}
 {% endfor %}
 ```
-
+---
 <ins>TO CONTROL THE NUMBER OF COLUMNS USED IN DROPDOWN MENU FOR A SPECIFIC NAVLABEL</ins>
 
 Add the following code to product-template.liquid
@@ -22,6 +22,7 @@ Add the following code to product-template.liquid
 #SiteNavLabel-fishing  ul { column-count: 4; }
 #SiteNavLabel-fishing  ul li {-webkit-column-break-inside: avoid;page-break-inside: avoid;    break-inside: avoid; }
 ```
+---
 <ins>TO ADD BREADCRUMBS</ins>
 
 Follow instructions here https://help.shopify.com/en/themes/customization/navigation/add-breadcrumbs
@@ -99,25 +100,25 @@ More here re Structured Data/SEO for Breadcrumbs
 https://www.shopify.co.uk/partners/blog/breadcrumb-navigation
 https://gist.github.com/mirceapiturca/9be3186b607922e0a1b9#file-shopify-breadcrumb-liquid-rich-snippets
 https://www.rockpapercopy.com/breadcrumbs-seo/
-
+---
 <INS> HOW TO ADD TABS TO PRODUCT DESCRIPTIONS </INS>
 
 See this tutorial https://community.shopify.com/c/Shopify-Design/Adding-tabs-on-product-page-simple-entry/td-p/430363
-
+---
 <INS> REMOVE POWERED BY SHOPIFY & ADD CUSTOM TEXT </INS>
 ```
 <small class="site-footer__copyright-content">&copy; {{ 'now' | date: "%Y" }}, {{ shop.name | link_to: '/' }} Ltd. Trading since 2003. VAT No. 808782009</small>
         <small class="site-footer__copyright-content site-footer__copyright-content--powered-by">{{ powered_by_link }}</small>
 ```
-
+---
 <INS> REMOVE TAXES CALCULATED AT CHECKOUT FROM PRODUCT PAGE </INS>
 
 See this article https://community.shopify.com/c/Shopify-Design/Delete-Shipping-calculated-at-checkout/td-p/533355
-
+---
 <ins> SHOW DISCOUNT % </ins>
 
 See this article https://www.blackbeltcommerce.com/shopify-how-to-show-percentage-discount-saved/
-
+---
 <ins>ADD 'From' IN FRONT OF LOWEST PRICE IF VARIANTS HAVE DIFFERENT PRICES AND ONLY SHOW ON Collections PAGE</ins>
 
 Amend code in product-price.liquid
@@ -164,3 +165,4 @@ To this:
   {% endif %}
   <!-- End code to add 'From' price' -->
 ```
+---
