@@ -125,6 +125,8 @@ See this article https://www.blackbeltcommerce.com/shopify-how-to-show-percentag
 ---
 <ins>ADD 'From' IN FRONT OF LOWEST PRICE IF VARIANTS HAVE DIFFERENT PRICES AND ONLY SHOW ON Collections PAGE</ins>
 
+**Note that this deliberately does not add 'From' if products are on Sale**
+
 Amend code in product-price.liquid
 
 **From this:**
