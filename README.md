@@ -126,7 +126,8 @@ See this article https://www.blackbeltcommerce.com/shopify-how-to-show-percentag
 <ins>ADD 'From' IN FRONT OF LOWEST PRICE IF VARIANTS HAVE DIFFERENT PRICES AND ONLY SHOW ON Collections PAGE</ins>
 
 Amend code in product-price.liquid
-From this:
+
+**From this:**
 ```
 <div class="price__regular">
     <dt>
@@ -141,7 +142,7 @@ From this:
 ```
 
 
-To this:
+**To this:**
 <!-- Start code to add 'From' price' -->
  ```
  {% if product.price_max != product.price_min and template == 'collection' %}
