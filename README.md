@@ -143,8 +143,8 @@ Amend code in product-price.liquid
 
 
 **To this:**
+```
 <!-- Start code to add 'From' price' -->
- ```
  {% if product.price_max != product.price_min and template == 'collection' %}
   <div class="price__regular">
     <dt>
