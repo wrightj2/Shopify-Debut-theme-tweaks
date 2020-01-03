@@ -118,7 +118,8 @@ See this article https://community.shopify.com/c/Shopify-Design/Delete-Shipping-
 
 See this article https://www.blackbeltcommerce.com/shopify-how-to-show-percentage-discount-saved/
 
-<ins>Add 'From' in front of lowest price if variants have different prices and only show on Collections page</ins>
+<ins>ADD 'From' IN FRONT OF LOWEST PRICE IF VARIANTS HAVE DIFFERENT PRICES AND ONLY SHOW ON Collections PAGE</ins>
+
 Amend code in product-price.liquid
 From this:
 ```
