@@ -118,6 +118,48 @@ See this article https://community.shopify.com/c/Shopify-Design/Delete-Shipping-
 
 See this article https://www.blackbeltcommerce.com/shopify-how-to-show-percentage-discount-saved/
 
+<ins>Add 'From' in front of lowest price if variants have different prices and only show on Collections page</ins>
+Amend code in product-price.liquid
+From this:
+```
+<div class="price__regular">
+    <dt>
+      <span class="visually-hidden visually-hidden--inline">{{ 'products.product.regular_price' | t }}</span>
+    </dt>
+    <dd>
+      <span class="price-item price-item--regular" data-regular-price>
+       {{ money_price }}
+      </span>
+    </dd>
+  </div>
+```
 
 
-
+To this:
+<!-- Start code to add 'From' price' -->
+ ```
+ {% if product.price_max != product.price_min and template == 'collection' %}
+  <div class="price__regular">
+    <dt>
+      <span class="visually-hidden visually-hidden--inline">{{ 'products.product.regular_price' | t }}</span>
+    </dt>
+    <dd>
+      <span class="price-item price-item--regular" data-regular-price>
+       From {{product.price_min | money}}
+      </span>
+    </dd>
+  </div>
+  {% else %}
+  <div class="price__regular">
+    <dt>
+      <span class="visually-hidden visually-hidden--inline">{{ 'products.product.regular_price' | t }}</span>
+    </dt>
+    <dd>
+      <span class="price-item price-item--regular" data-regular-price>
+       {{ money_price }}
+      </span>
+    </dd>
+  </div>
+  {% endif %}
+  <!-- End code to add 'From' price' -->
+```
