@@ -204,3 +204,8 @@ If you want to show From and To price i.e. lowest priced variant to highest pric
 ```
 
 ---
+
+
+<ins> Hide unavailable variants </ins>
+
+See this article https://community.shopify.com/c/Shopify-Design/How-to-hide-irrelevant-variant-in-Debut-theme/td-p/360226/highlight/true
