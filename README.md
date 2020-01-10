@@ -106,6 +106,39 @@ https://www.rockpapercopy.com/breadcrumbs-seo/
 
 See this tutorial https://community.shopify.com/c/Shopify-Design/Adding-tabs-on-product-page-simple-entry/td-p/430363
 
+<INS> HOW TO ADD EXTENDED PRODUCT DESCRIPTION INFO BENEATH PRODUCT IMAGES </INS>
+
+Add code below in 'product-template.liquid' file, find 'product-single__description rte' and replace.
+
+```
+<div class="product-single__description rte" id="first_product_description">
+      {{ product.description | split: '<!-- split -->' | first }}
+          </div>
+       </div>
+        <div class="product-single__description rte" id="last_product_description">
+      {{ product.description | split: '<!-- split -->' | last }}
+      </div>
+ ```
+ 
+ To also apply to featured product, amend to the following in 'featured-product.liquid'
+ 
+ ```
+ <div class="product-single__description rte" id="first_product_description">
+          {% unless product == empty %}
+            {{ product.description | split: '<!-- split -->' | first }}
+          </div>
+       </div>
+      </div>
+      
+        <div class="product-single__description rte" id="last_product_description">
+      {{ product.description | split: '<!-- split -->' | last }}
+      </div>
+          {% else %}
+            {{ 'homepage.onboarding.product_description' | t }}
+          {% endunless %}
+        </div>
+        ```
+
 ---
 <INS> REMOVE POWERED BY SHOPIFY & ADD CUSTOM TEXT </INS>
 ```
