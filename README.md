@@ -138,7 +138,7 @@ Add code below in 'product-template.liquid' file, find 'product-single__descript
             {{ 'homepage.onboarding.product_description' | t }}
           {% endunless %}
         </div>
-        ```
+```
 
 ---
 <INS> REMOVE POWERED BY SHOPIFY & ADD CUSTOM TEXT </INS>
