@@ -106,6 +106,7 @@ https://www.rockpapercopy.com/breadcrumbs-seo/
 
 See this tutorial https://community.shopify.com/c/Shopify-Design/Adding-tabs-on-product-page-simple-entry/td-p/430363
 
+---
 <INS> HOW TO ADD EXTENDED PRODUCT DESCRIPTION INFO BENEATH PRODUCT IMAGES </INS>
 
 Add code below in 'product-template.liquid' file, find 'product-single__description rte' and replace.
