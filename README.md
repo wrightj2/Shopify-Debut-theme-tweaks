@@ -142,6 +142,7 @@ Add code below in 'product-template.liquid' file, find 'product-single__descript
 
 ---
 <INS> REMOVE POWERED BY SHOPIFY & ADD CUSTOM TEXT </INS>
+
 ```
 <small class="site-footer__copyright-content">&copy; {{ 'now' | date: "%Y" }}, {{ shop.name | link_to: '/' }} Ltd. Trading since 2003. VAT No. 808782009</small>
         <small class="site-footer__copyright-content site-footer__copyright-content--powered-by">{{ powered_by_link }}</small>
