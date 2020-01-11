@@ -260,3 +260,32 @@ If you want to show From and To price i.e. lowest priced variant to highest pric
 <ins> Hide unavailable variants </ins>
 
 See this article https://community.shopify.com/c/Shopify-Design/How-to-hide-irrelevant-variant-in-Debut-theme/td-p/360226/highlight/true
+
+---
+
+<INS> TO CHANGE COLLECTIONS SECTION ON HOMEPAGE TO SHOW BUTTONS RATHER THAN JUST TEXT </INS>
+
+Add this line of code ```<div class="btn collections_btn">``` to the section below in 'collection-grid-item.liquid'
+
+```
+<div class="collection-grid-item__title-wrapper">
+      <div class="collection-grid-item__title h3">
+         <div class="btn collections_btn">
+        {% if collection.title == blank %}
+          {{ 'homepage.onboarding.collection_title' | t }}
+        {% else %}
+          {{ collection.title }}
+        {% endif %}
+      </div>
+    </div>
+```
+
+Style thus:
+
+```
+.collections_btn {
+  text-align: center;
+  width: 100%;
+  opacity: 0.85;
+}
+```
