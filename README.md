@@ -140,7 +140,7 @@ Add code below in 'product-template.liquid' file, find 'product-single__descript
         </div>
 ```
 
-If product descriptions don't all contain '<!-- split -->' then need to wrap in an IF statement. Makes it so that desriptions without '<!-- split -->' display as original theme code.
+If product descriptions don't all contain ```<!-- split -->``` then need to wrap in an IF statement. Makes it so that desriptions without ```<!-- split -->``` display as original theme code.
 
 ```
       <div class="product-single__description rte" id="first_product_description">
