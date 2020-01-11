@@ -293,5 +293,6 @@ Style thus:
 .collection-grid-item:hover {
   webkit-transform: scale(1.025);
   transform: scale(1.025);
+  transition: transform .8s;
 }
 ```
