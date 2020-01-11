@@ -140,6 +140,22 @@ Add code below in 'product-template.liquid' file, find 'product-single__descript
         </div>
 ```
 
+If product descriptions don't all contain <!-- split --> then need to wrap in an IF statement. Makes it so that desriptions without <!-- split --> display as original theme code.
+
+```
+      <div class="product-single__description rte" id="first_product_description">
+      {{ product.description | split: '<!-- split -->' | first }}
+          </div>
+      </div>
+    </div>
+    {% if product.description contains "<!-- split -->" %}
+        <div class="product-single__description rte" id="last_product_description">
+      {{ product.description | split: '<!-- split -->' | last }}
+     &nbsp;
+      </div>
+  		{% endif %}
+```
+
 ---
 <INS> REMOVE POWERED BY SHOPIFY & ADD CUSTOM TEXT </INS>
 
