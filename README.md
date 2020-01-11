@@ -287,5 +287,11 @@ Style thus:
   text-align: center;
   width: 100%;
   opacity: 0.85;
+  font-size: 0.6em;
+}
+
+.collection-grid-item:hover {
+  webkit-transform: scale(1.025);
+  transform: scale(1.025);
 }
 ```
