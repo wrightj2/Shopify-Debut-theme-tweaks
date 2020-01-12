@@ -322,7 +322,8 @@ Create a new template based on a Page, I have called mine 'htmlsitemap'. Code in
 Replace ```{{ page.content }}``` with the following code:
 
 ```
-<div class="row">
+{%- comment -%} Jon start of HTML SiteMap code {%- endcomment -%}
+        <div class="row">
 <div class="col-md-6">
   <h2>Collections</h2>
        <ul>
@@ -348,10 +349,8 @@ Replace ```{{ page.content }}``` with the following code:
             </ul> 
           </div>
     </div>
-      </div>
-    </div>
-  </div>
-</div>
+    {%- comment -%} Jon end of HTML SiteMap code {%- endcomment -%}   
+
 ```
 
 Then go to Online Store>Pages>Add Page and create a new page making sure to select 'page.htmlsitemap' as the template
