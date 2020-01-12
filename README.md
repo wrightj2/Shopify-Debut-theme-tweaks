@@ -296,3 +296,64 @@ Style thus:
   transition: transform .8s;
 }
 ```
+
+---
+
+<INS> CREATE A HTML SITEMAP (WHILST SHOPIFY AUTOMATICALLY CREATES AN XML SITEMAP, SOME PEOPLE ALSO WANT A HTML ONE) </INS>
+
+Create a new template based on a Page, I have called mine 'htmlsitemap'. Code in that template will look like this:
+
+```
+<div class="page-width">
+  <div class="grid">
+    <div class="grid__item medium-up--five-sixths medium-up--push-one-twelfth">
+      <div class="section-header text-center">
+        <h1>{{ page.title }}</h1>
+      </div>
+
+      <div class="rte">
+        {{ page.content }}
+      </div>
+    </div>
+  </div>
+</div>
+```
+
+Replace ```{{ page.content }}``` with the following code:
+
+```
+<div class="row">
+<div class="col-md-6">
+  <h2>Collections</h2>
+       <ul>
+  {% for c in collections %}
+  <li>
+    <a href="{{ c.url }}">{{ c.title }}</a>
+  </li>
+  {% endfor %}
+</ul> 
+        </div>
+          <div class="col-md-6">
+            <h2>Products</h2>
+            <ul>
+              
+{% paginate collections.all.products by 1000 %}
+  {% for product in collections.all.products %}
+  	<li>
+    <a href="{{ product.url }}">{{ product.title }}</a>
+ 	 </li>
+  {% endfor %}
+{% endpaginate %}
+
+            </ul> 
+          </div>
+    </div>
+      </div>
+    </div>
+  </div>
+</div>
+```
+
+Then go to Online Store>Pages>Add Page and create a new page making sure to select 'page.htmlsitemap' as the template
+
+---
