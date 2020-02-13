@@ -359,7 +359,7 @@ Then go to Online Store>Pages>Add Page and create a new page making sure to sele
 
 <INS> To add copy to product pages for a specific Vendor </INS>
 
-Go to 'product-template.liquid' and add the following code beneath <div class="product-single__description rte">
+Go to 'product-template.liquid' and add the following code beneath ```<div class="product-single__description rte">```
 
 ```
 {%- comment -%}
