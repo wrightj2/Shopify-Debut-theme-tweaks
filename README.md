@@ -356,3 +356,17 @@ Replace ```{{ page.content }}``` with the following code:
 Then go to Online Store>Pages>Add Page and create a new page making sure to select 'page.htmlsitemap' as the template
 
 ---
+
+<INS> To add copy to product pages for a specific Vendor </INS>
+
+Go to 'product-template.liquid' and add the following code beneath <div class="product-single__description rte">
+
+```
+{%- comment -%}
+          Jon custom wording for all 'VendorName' products - to appear above product descritption
+        {%- endcomment -%}
+          {% if product.vendor == 'VendorName' %}
+          <p class=generic-product-copy> Add your copy here.</p>
+{% endif %}
+```
+---
