@@ -80,8 +80,8 @@ But slightly amend the code to correct positioning to align with page-width by u
 Also add the following CSS to theme.scss.liquid
 ```
 .breadcrumb {
- padding-top: 2px;
- font-size: small;
+ padding-top: 12px;
+ font-size: medium;
 }
 
 .breadcrumb {
@@ -90,8 +90,8 @@ Also add the following CSS to theme.scss.liquid
   text-decoration: none;
 }
 
-.breadcrumb :hover,
-.breadcrumb focus {
+.breadcrumb a:hover,
+.breadcrumb a focus {
   text-decoration: underline;
 }
 ```
