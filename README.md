@@ -376,3 +376,6 @@ Go to 'product-template.liquid' and add the following code beneath ```<div class
 https://www.sean-orfila.com/blog/shopify/how-to-create-an-faq-accordion-in-shopifys-page-editor/
 
 ---
+
+<INS> Move button position on Hero Image </INS>
+https://community.shopify.com/c/Shopify-Discussion/Show-hide-on-different-devices-button-in-Hero-banner/m-p/666119#M157883
