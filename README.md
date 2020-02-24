@@ -370,3 +370,9 @@ Go to 'product-template.liquid' and add the following code beneath ```<div class
 {% endif %}
 ```
 ---
+
+<INS> ADD AN FAQ PAGE USING CSS </INS>
+
+https://www.sean-orfila.com/blog/shopify/how-to-create-an-faq-accordion-in-shopifys-page-editor/
+
+---
