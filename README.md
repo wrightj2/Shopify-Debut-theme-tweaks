@@ -379,3 +379,40 @@ https://www.sean-orfila.com/blog/shopify/how-to-create-an-faq-accordion-in-shopi
 
 <INS> Move button position on Hero Image </INS>
 https://community.shopify.com/c/Shopify-Discussion/Show-hide-on-different-devices-button-in-Hero-banner/m-p/666119#M157883
+
+---
+
+<INS> CHANGE SHIPPING WORDING ON PRODUCT PAGE BASED ON PRODUCT TYPE e.g. No VAT on 2nd hand items </INS>
+
+In Sections > product-template.liquid, replace this code:
+
+```
+{%- if shop.taxes_included or shop.shipping_policy.body != blank -%}
+  <div class="product__policies rte" data-product-policies>
+   {%- if shop.taxes_included -%}
+      {{ 'products.product.include_taxes' | t }}
+   {%- endif -%}
+   {%- if shop.shipping_policy.body != blank -%}
+      {{ 'products.product.shipping_policy_html' | t: link: shop.shipping_policy.url }}
+   {%- endif -%}
+  </div>
+  {%- endif -%}
+  ```
+  
+  With this code:
+  
+  ```
+  {%- if shop.taxes_included or shop.shipping_policy.body != blank -%}
+   <div class="product__policies rte" data-product-policies>
+      {%- if shop.taxes_included and product.type != "Second Hand" -%}
+         {{ 'products.product.include_taxes' | t }}
+      {%- endif -%}
+      {%- if shop.shipping_policy.body != blank and product.type != "Second Hand" -%}
+         {{ 'products.product.shipping_policy_html' | t: link: shop.shipping_policy.url }}
+      {%- endif -%}
+      {%- if product.type == "Second Hand" -%}
+      <p> No VAT on second hand items. Free UK postage </p>
+      {%- endif -%}
+   </div>
+   {%- endif -%}
+ ```
