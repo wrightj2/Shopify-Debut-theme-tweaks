@@ -427,3 +427,5 @@ https://stackoverflow.com/questions/25684840/add-price-filter-in-shopify
 https://community.shopify.com/c/Shopify-Discussion/Hide-certain-tags-in-certain-collections-using-filters/m-p/462237
 
 https://www.customfitwebdesign.com/filtering-shopify-collections-by-certain-product-tags-in-the-debut-theme/
+
+https://www.clixlogix.com/blog/customize-shopify-product-filters/
