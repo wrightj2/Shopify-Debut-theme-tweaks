@@ -416,3 +416,14 @@ In Sections > product-template.liquid, replace this code:
    </div>
    {%- endif -%}
  ```
+
+---
+<INS> Creating Product filters </INS>
+
+https://shopify.dev/tutorials/customize-theme-filter-collections-with-product-tags#you-will-need-some-javascript
+
+https://stackoverflow.com/questions/25684840/add-price-filter-in-shopify
+
+https://community.shopify.com/c/Shopify-Discussion/Hide-certain-tags-in-certain-collections-using-filters/m-p/462237
+
+https://www.customfitwebdesign.com/filtering-shopify-collections-by-certain-product-tags-in-the-debut-theme/
