@@ -101,6 +101,83 @@ https://www.shopify.co.uk/partners/blog/breadcrumb-navigation
 https://gist.github.com/mirceapiturca/9be3186b607922e0a1b9#file-shopify-breadcrumb-liquid-rich-snippets
 https://www.rockpapercopy.com/breadcrumbs-seo/
 
+Using Microdata instead - https://matt-jackson.com/seo-guides/fix-shopify-breadcrumbs-data-vocabulary-org-schema-deprecated/
+
+```
+<div id="breadcrumb" class="breadcrumb-holder">
+  <div class="container ">
+    <ul class="breadcrumb" itemscope itemtype="http://schema.org/BreadcrumbList">
+
+      <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+        <a itemprop="item" href="/">
+          <span itemprop="name" class="hide">Home</span>{{ 'general.breadcrumb.home' | t }}
+        <meta itemprop="position" content="1" />
+		</a>
+      </li>
+
+      {% if template contains 'product' %}
+
+        {% if collection %}
+          {% if collection.handle %}
+          <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="hide">
+            <a href="{{collection.url}}" itemprop="item">
+              <span itemprop="name">{{ collection.title }}</span>
+			  <meta itemprop="position" content="2" />
+            </a>
+          </li>
+          <li>{{ collection.title | link_to: collection.url }}</li>
+          {% endif %}
+        {% endif %}
+
+        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="hide">
+          <a href="{{product.url}}" itemprop="item">
+            <span itemprop="name">{{ product.title }}</span>
+			<meta itemprop="position" content="3" />
+          </a>
+        </li>
+        <li class="active">{{ product.title }}</li>
+
+      {% elsif template contains 'collection' %}
+
+        {% if current_tags %}
+          <li>{{ collection.title | link_to: collection.url }}</li>
+          <li class="active">{{ current_tags.first }}</li>
+        {% elsif collection.handle %}
+          <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="hide">
+            <a href="{{collection.url}}" itemprop="item">
+              <span itemprop="name">{{ collection.title }}</span>
+			  <meta itemprop="position" content="2" />
+            </a>
+          </li>
+          <li class="active">{{ collection.title }}</li>
+        {% else %}
+          <li class="active">{{ page_title }}</li>
+        {% endif %}
+
+      {% elsif template == 'article' %}
+
+      <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">  
+        <a itemprop="item" href="{{ blog.url }}">
+        <meta itemprop="name" content="{{ blog.title }}">
+        <meta itemprop="position" content="2" /></a>
+        {{ blog.title | link_to: blog.url }}
+      
+      </li>
+        <li class="active">
+          {{ article.title }}
+      </li>
+
+      {% else %}
+
+        <li class="active">{{ page_title }}</li>
+
+      {% endif %}
+
+    </ul>
+  </div>
+</div>
+```
+
 Structured data for products
 https://feedarmy.com/kb/shopify-microdata-for-google-shopping/
 
