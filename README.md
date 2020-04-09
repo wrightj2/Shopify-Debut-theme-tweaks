@@ -509,3 +509,12 @@ https://community.shopify.com/c/Shopify-Discussion/Hide-certain-tags-in-certain-
 https://www.customfitwebdesign.com/filtering-shopify-collections-by-certain-product-tags-in-the-debut-theme/
 
 https://www.clixlogix.com/blog/customize-shopify-product-filters/
+
+---
+<INS> Nested Collections </INS>
+
+https://ablesense.com/blogs/news/nested-collections-in-shopify
+
+https://community.shopify.com/c/Shopify-Design/Collection-Feature-a-subset-of-collections-on-a-page/m-p/614952
+
+---
