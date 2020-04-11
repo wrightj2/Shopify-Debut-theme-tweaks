@@ -521,7 +521,7 @@ https://community.shopify.com/c/Shopify-Design/Collection-Feature-a-subset-of-co
 <INS> To consistently align buy now buttons, price etc. on Collections (allowing for different product title lengths)</INS>
 
 ```
-.product-card {
+.grid-view-item.product-card {
     min-height: 340px;
     max-height: 340px;
     margin-top: 20px;
