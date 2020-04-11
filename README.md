@@ -518,3 +518,18 @@ https://ablesense.com/blogs/news/nested-collections-in-shopify
 https://community.shopify.com/c/Shopify-Design/Collection-Feature-a-subset-of-collections-on-a-page/m-p/614952
 
 ---
+<INS> To consistently align buy now buttons, price etc. on Collections (allowing for different product title lengths)</INS>
+
+```
+.product-card {
+    min-height: 340px;
+    max-height: 340px;
+    margin-top: 20px;
+}
+.price.price--listing { 
+margin-top: 20px;
+top: 300px;
+position: absolute;
+}
+```
+---
