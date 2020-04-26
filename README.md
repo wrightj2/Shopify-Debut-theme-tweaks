@@ -533,3 +533,6 @@ position: absolute;
 }
 ```
 ---
+
+<INS> Add sidebar to blog </INS>
+https://www.adplugg.com/support/cookbook/shopify/placing-ads-into-the-sidebar-of-your-shopify-sites-blog#add-a-sidebar-to-your-shopify-blog-index
