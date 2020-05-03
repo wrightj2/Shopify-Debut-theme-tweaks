@@ -236,6 +236,16 @@ If product descriptions don't all contain ```<!-- split -->``` then need to wrap
   		{% endif %}
 ```
 
+Option if need more than 2 descriptions
+
+```
+<div class="product-single__description rte" itemprop="description">
+            {% assign descr = product-single__description | split: "<!-- split -->" %}
+            {{ descr[0]}}
+            {{ descr[1]}}
+            {{ descr[2]}}
+    </div>
+```
 ---
 <INS> REMOVE POWERED BY SHOPIFY & ADD CUSTOM TEXT </INS>
 
