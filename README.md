@@ -546,3 +546,10 @@ position: absolute;
 
 <INS> Add sidebar to blog </INS>
 https://www.adplugg.com/support/cookbook/shopify/placing-ads-into-the-sidebar-of-your-shopify-sites-blog#add-a-sidebar-to-your-shopify-blog-index
+
+---
+<INS> Create custom product options </INS>
+
+https://www.youtube.com/watch?v=z5t0KFO6wMg
+
+---
