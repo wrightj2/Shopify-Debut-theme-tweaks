@@ -520,6 +520,8 @@ https://www.customfitwebdesign.com/filtering-shopify-collections-by-certain-prod
 
 https://www.clixlogix.com/blog/customize-shopify-product-filters/
 
+https://community.shopify.com/c/Shopify-Discussion/Filter-by-Product-Type-in-A-Collection-filtered-by-tags/m-p/402725
+
 ---
 <INS> Nested Collections </INS>
 
