@@ -178,6 +178,17 @@ Using Microdata instead - https://matt-jackson.com/seo-guides/fix-shopify-breadc
 </div>
 ```
 
+For the above to work on themes that don't originally support breadcrumbs you will also need to add the translation e.g. Add the following to 'en.default.json'
+
+```
+"breadcrumbs": {
+      "you_are_here": "You are here",
+      "home": "Home",
+      "home_link_title": "Back to the frontpage"
+    },
+    
+```
+
 Structured data for products
 https://feedarmy.com/kb/shopify-microdata-for-google-shopping/
 
