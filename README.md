@@ -362,6 +362,45 @@ If you want to show From and To price i.e. lowest priced variant to highest pric
 
 See this article https://community.shopify.com/c/Shopify-Design/How-to-hide-irrelevant-variant-in-Debut-theme/td-p/360226/highlight/true
 
+
+Create a new snippet called 'remove-sold-out' and add the following code:
+```
+{% comment %}
+  Remove sold-out variants.
+  Only works for products that have one option.
+  It won't work with products that have two or three options, like Size and Color.
+  See: https://docs.myshopify.io/themes/customization/products/hide-variants-that-are-sold-out
+{% endcomment %}
+
+{% if product.options.size == 1 %}
+  <script>
+  var $addToCartForm = $('form[action="/cart/add"]');
+  if (window.MutationObserver && $addToCartForm.length) {
+    if (typeof observer === 'object' && typeof observer.disconnect === 'function') {
+      observer.disconnect();
+    }
+    var config = { childList: true, subtree: true };
+    var observer = new MutationObserver(function() { 
+      {% for variant in product.variants %}
+        {% unless variant.available %}
+          jQuery('.single-option-selector option').filter(function() { return jQuery(this).text() === {{ variant.title | json }}; }).remove();
+        {% endunless %}
+      {% endfor %}
+      jQuery('.single-option-selector').trigger('change');
+      observer.disconnect();
+    });  
+    observer.observe($addToCartForm[0], config);
+  }
+  </script>
+{% endif %}
+```
+
+
+Then add the following to the bottom of theme.liquid (just before the closing </body> tag:
+```
+{% include 'remove-sold-out' %}
+```
+
 ---
 
 <INS> TO CHANGE COLLECTIONS SECTION ON HOMEPAGE TO SHOW BUTTONS RATHER THAN JUST TEXT </INS>
