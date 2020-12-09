@@ -605,3 +605,8 @@ https://www.adplugg.com/support/cookbook/shopify/placing-ads-into-the-sidebar-of
 https://www.youtube.com/watch?v=z5t0KFO6wMg
 
 ---
+
+<INS> Add Sale prices to Google Shopping Feed </INS>
+https://business.czarto.com/2020/08/12/shopify-sale-price-google-shopping/
+
+---
